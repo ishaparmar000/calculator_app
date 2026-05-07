@@ -91,7 +91,7 @@ class _DisplayScreenState extends State<DisplayScreen> {
                             key: ValueKey(text),
                             fit: BoxFit.scaleDown,
                             alignment: Alignment.centerRight,
-                            child: Text(text, style: StyleHelper.regularWhite_80, maxLines: 1,),
+                            child: Text(text, style: StyleHelper.regularWhite_80(), maxLines: 1,),
                           ),
                         );
                       }),

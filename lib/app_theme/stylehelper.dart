@@ -175,8 +175,8 @@ class StyleHelper {
 
   static TextStyle regularWhite_38 = TextStyle(color: AppColors.whiteColor,  fontSize: 38.sp, fontFamily: regular);
 
-  static TextStyle regularWhite_80 =
-    TextStyle(
+  static TextStyle regularWhite_80() {
+    return TextStyle(
       color: Get.isDarkMode
           ? AppColors.whiteColor
           : AppColors.blackColor,
@@ -184,6 +184,7 @@ class StyleHelper {
       fontFamily: regular,
       height: 1.0,
     );
+  }
 
   static TextStyle semiBoldBlack_8 =
       TextStyle(fontFamily: semiBold, color: black, fontSize: 8.sp);
